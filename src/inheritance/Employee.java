@@ -33,4 +33,13 @@ public class Employee {
       SuperClass getStatus() {
         return new SuperClass();
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+            "name='" + name + '\'' +
+            ", salary=" + salary +
+            ", hireday=" + hireday +
+            '}';
+    }
 }

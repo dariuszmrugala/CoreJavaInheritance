@@ -10,7 +10,13 @@ public class ManagerTest {
 
     public static void main(String[] args) {
         var boss = new Manager("Carl Crackes", 80000, 1987, 12, 15);
+//        System.out.println(boss);
         boss.setBonus(5000);
+//        System.out.println(boss);
+//        if (boss instanceof Employee e) {
+//            System.out.println("a jednak employee");
+//        }
+
 
         var staff = new Employee[3];
 
@@ -19,6 +25,11 @@ public class ManagerTest {
         staff[2] = new Employee("Tommy Tester", 40_000, 1990, 3, 15);
 
         for(Employee e : staff) {
+            if (e instanceof Manager manager) {
+//                System.out.println(e);
+                manager.setBonus(100_000);
+//                System.out.println(e);
+            }
             System.out.println("name=" + e.getName() + ", salary=" + e.getSalary());
         }
     }

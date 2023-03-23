@@ -28,4 +28,11 @@ public class Manager extends Employee{
     SubClass getStatus() {
         return new SubClass();
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " Manager{" +
+            "bonus=" + bonus +
+            '}';
+    }
 }

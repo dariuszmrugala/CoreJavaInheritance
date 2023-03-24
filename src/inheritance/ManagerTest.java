@@ -13,7 +13,7 @@ public class ManagerTest {
 //        System.out.println(boss);
         boss.setBonus(5000);
 //        System.out.println(boss);
-//        if (boss instanceof Employee e) {
+//        if (boss instanceof Employee) {
 //            System.out.println("a jednak employee");
 //        }
 

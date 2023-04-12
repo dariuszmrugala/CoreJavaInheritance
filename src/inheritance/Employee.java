@@ -55,7 +55,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return  getClass().getName() + "{" +
             "name='" + name + '\'' +
             ", salary=" + salary +
             ", hireday=" + hireday +

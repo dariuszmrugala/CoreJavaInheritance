@@ -32,5 +32,7 @@ public class ManagerTest {
             }
             System.out.println("name=" + e.getName() + ", salary=" + e.getSalary());
         }
+
+        System.out.println(staff[1]);
     }
 }

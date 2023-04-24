@@ -5,6 +5,7 @@ import java.text.FieldPosition;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Test {
 
@@ -32,6 +33,14 @@ public class Test {
 
         System.out.printf("%d %s", new Object[] {Integer.valueOf(1), "widgets"});
         System.out.printf("%d %s", Integer.valueOf(1), "hejo");
+        System.out.println();
+
+        Size s = Enum.valueOf(Size.class, "SMALL");
+        System.out.println(s);
+        var s1 = Size.SMALL;
+        System.out.println(s1);
+
+        System.out.println(Arrays.toString(Size.values()));
 
     }
 
